@@ -30,7 +30,6 @@
     UIViewController *scVC5 = [[FixedHeightTableViewController alloc] initWithNibName:@"FixedHeightTableViewController" bundle:nil];
     UIViewController *scVC6 = [[AttributedTextViewController alloc] initWithNibName:@"AttributedTextViewController" bundle:nil];
     
-    
     self.tabBarController = [[UITabBarController alloc] init];
     self.tabBarController.viewControllers = @[scVC1, scVC2, scVC3, scVC2, scVC4, scVC5, scVC6];
     self.window.rootViewController = self.tabBarController;
