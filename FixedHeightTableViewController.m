@@ -30,12 +30,16 @@
     if (self) {
         // Custom initialization
         self.tabBarItem.image = [UIImage imageNamed:@"second"];
-        self.title = NSLocalizedString(@"table", @"");
+        self.title = NSLocalizedString(@"table lines", @"");
         self.number = 10;
     }
     return self;
 }
 
+/**
+ * The number of lines in the table view changes and we want the table view
+ frame to adjust to a small contentview
+ */
 - (void)viewDidLoad
 {
     [super viewDidLoad];

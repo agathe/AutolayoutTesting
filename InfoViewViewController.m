@@ -31,6 +31,9 @@
     return self;
 }
 
+/**
+ * placement is all done in the xib
+ */
 - (void)viewDidLoad
 {
     [super viewDidLoad];

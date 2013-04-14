@@ -36,6 +36,9 @@
     return self;
 }
 
+/**
+ * We want to change the font and the text displayed in a table view cell
+ */
 - (void)viewDidLoad
 {
     [super viewDidLoad];

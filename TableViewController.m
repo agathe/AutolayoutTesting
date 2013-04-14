@@ -32,6 +32,9 @@
     return self;
 }
 
+/**
+ * The font size changes in the table view cell
+ */
 - (void)viewDidLoad
 {
     [super viewDidLoad];

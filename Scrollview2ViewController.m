@@ -36,6 +36,11 @@
     return self;
 }
 
+/**
+ * A view in the contentview can grow dynamically (when clicking the button)
+ * we want the content view to adjust its size when that white view grows beyond 
+ the size of the content view
+ */
 - (void)viewDidLoad
 {
     [super viewDidLoad];

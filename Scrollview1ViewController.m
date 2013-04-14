@@ -33,10 +33,11 @@
 }
 
 /**
- * All autolayout, the contentview has one variable size element.
+ * The contentview has one variable size element - the white view at the top.
+ * The white and blue views are separated by a fixed spacing. The blue view does not grow vertically.
  * the content view needs to be as wide as the scrollview, and at least as high
  * as the scrollview +1.0
- * we remove constraints on the white variable size element in the content view.
+ * We want the scrollview to always scroll. 
  */
 - (void)viewDidLoad
 {
