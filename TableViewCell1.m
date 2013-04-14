@@ -55,7 +55,6 @@ static CGFloat allFontSize = 10.0;
     label.font = [UIFont systemFontOfSize:allFontSize];
     self.label = label;
     
-    NSLog(@"%@", [self.contentView constraintsAffectingLayoutForAxis:UILayoutConstraintAxisVertical]);
 }
 
 //- (void)updateConstraints

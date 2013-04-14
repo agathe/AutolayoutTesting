@@ -32,7 +32,7 @@
     
     
     self.tabBarController = [[UITabBarController alloc] init];
-    self.tabBarController.viewControllers = @[scVC6, scVC5, scVC4, scVC3, scVC1, scVC2];
+    self.tabBarController.viewControllers = @[scVC1, scVC2, scVC3, scVC2, scVC4, scVC5, scVC6];
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;

@@ -7,7 +7,6 @@
 //
 
 #import "TextAttributesFactory.h"
-#import "RegexKitLite.h"
 #import "AttributedStringView.h"
 
 static NSDictionary *part1Attributes;

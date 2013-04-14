@@ -6,7 +6,7 @@
 //  Copyright (c) 2013. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+
 #import "UITableViewCell+FixUITableViewCellAutolayout.h"
 
 @interface AttributedTableViewCell : UITableViewCell

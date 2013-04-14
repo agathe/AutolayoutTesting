@@ -101,7 +101,6 @@
 
 - (void)textChanged:(NSString*)string
 {
-    NSLog(@"text changed %@", string);
     NSArray *twoLines = [string componentsSeparatedByString:@";"];
     NSString *title = twoLines.count>0 ? [twoLines objectAtIndex:0] : @"";
     NSString *artist = twoLines.count>1 ? [twoLines objectAtIndex:1] : @"";

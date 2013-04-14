@@ -40,7 +40,6 @@
 		31585C90170B75BC00C54ED9 /* AttributedStringView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31585C8E170B75BC00C54ED9 /* AttributedStringView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		31585C96170B7CC300C54ED9 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31585C95170B7CC300C54ED9 /* CoreText.framework */; };
 		31585C99170B82D000C54ED9 /* TextAttributesFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 31585C98170B82D000C54ED9 /* TextAttributesFactory.m */; };
-		31585C9C170B89B100C54ED9 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 31585C9B170B89B100C54ED9 /* RegexKitLite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		31585C9E170B8B2700C54ED9 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 31585C9D170B8B2700C54ED9 /* libicucore.dylib */; };
 		31585CF2170BD61D00C54ED9 /* AttributedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 31585CF1170BD61D00C54ED9 /* AttributedTableViewCell.m */; };
 /* End PBXBuildFile section */
@@ -54,8 +53,8 @@
 		31585C1C1703A23F00C54ED9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		31585C1E1703A23F00C54ED9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		31585C201703A23F00C54ED9 /* AutolayoutTesting-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AutolayoutTesting-Prefix.pch"; sourceTree = "<group>"; };
-		31585C211703A23F00C54ED9 /* AutolayoutTestingAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutolayoutTestingAppDelegate.h; sourceTree = "<group>"; };
-		31585C221703A23F00C54ED9 /* AutolayoutTestingAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutolayoutTestingAppDelegate.m; sourceTree = "<group>"; };
+		31585C211703A23F00C54ED9 /* AutolayoutTestingAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AutolayoutTestingAppDelegate.h; path = ../AutolayoutTestingAppDelegate.h; sourceTree = "<group>"; };
+		31585C221703A23F00C54ED9 /* AutolayoutTestingAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AutolayoutTestingAppDelegate.m; path = ../AutolayoutTestingAppDelegate.m; sourceTree = "<group>"; };
 		31585C241703A23F00C54ED9 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		31585C261703A23F00C54ED9 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		31585C281703A23F00C54ED9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -63,14 +62,14 @@
 		31585C2F1703A23F00C54ED9 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
 		31585C341703A23F00C54ED9 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		31585C361703A23F00C54ED9 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
-		31585C431703A29200C54ED9 /* Scrollview1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scrollview1ViewController.h; sourceTree = "<group>"; };
-		31585C441703A29200C54ED9 /* Scrollview1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scrollview1ViewController.m; sourceTree = "<group>"; };
-		31585C451703A29200C54ED9 /* Scrollview1ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Scrollview1ViewController.xib; sourceTree = "<group>"; };
+		31585C431703A29200C54ED9 /* Scrollview1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Scrollview1ViewController.h; path = ../Scrollview1ViewController.h; sourceTree = "<group>"; };
+		31585C441703A29200C54ED9 /* Scrollview1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Scrollview1ViewController.m; path = ../Scrollview1ViewController.m; sourceTree = "<group>"; };
+		31585C451703A29200C54ED9 /* Scrollview1ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Scrollview1ViewController.xib; path = ../Scrollview1ViewController.xib; sourceTree = "<group>"; };
 		31585C491703A9CD00C54ED9 /* View1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = View1.h; sourceTree = "<group>"; };
 		31585C4A1703A9CD00C54ED9 /* View1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = View1.m; sourceTree = "<group>"; };
-		31585C4C170528C400C54ED9 /* Scrollview2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scrollview2ViewController.h; sourceTree = "<group>"; };
-		31585C4D170528C500C54ED9 /* Scrollview2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scrollview2ViewController.m; sourceTree = "<group>"; };
-		31585C4E170528C500C54ED9 /* Scrollview2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Scrollview2ViewController.xib; sourceTree = "<group>"; };
+		31585C4C170528C400C54ED9 /* Scrollview2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Scrollview2ViewController.h; path = ../Scrollview2ViewController.h; sourceTree = "<group>"; };
+		31585C4D170528C500C54ED9 /* Scrollview2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Scrollview2ViewController.m; path = ../Scrollview2ViewController.m; sourceTree = "<group>"; };
+		31585C4E170528C500C54ED9 /* Scrollview2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Scrollview2ViewController.xib; path = ../Scrollview2ViewController.xib; sourceTree = "<group>"; };
 		31585C5117052B0400C54ED9 /* View2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = View2.h; sourceTree = "<group>"; };
 		31585C5217052B0400C54ED9 /* View2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = View2.m; sourceTree = "<group>"; };
 		31585C5417063BA600C54ED9 /* InfoViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InfoViewViewController.h; path = ../InfoViewViewController.h; sourceTree = "<group>"; };
@@ -96,8 +95,6 @@
 		31585C95170B7CC300C54ED9 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		31585C97170B82D000C54ED9 /* TextAttributesFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextAttributesFactory.h; sourceTree = "<group>"; };
 		31585C98170B82D000C54ED9 /* TextAttributesFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextAttributesFactory.m; sourceTree = "<group>"; };
-		31585C9A170B89B100C54ED9 /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
-		31585C9B170B89B100C54ED9 /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
 		31585C9D170B8B2700C54ED9 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		31585CF0170BD61D00C54ED9 /* AttributedTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttributedTableViewCell.h; sourceTree = "<group>"; };
 		31585CF1170BD61D00C54ED9 /* AttributedTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttributedTableViewCell.m; sourceTree = "<group>"; };
@@ -229,8 +226,6 @@
 		31585C88170B757E00C54ED9 /* text */ = {
 			isa = PBXGroup;
 			children = (
-				31585C9A170B89B100C54ED9 /* RegexKitLite.h */,
-				31585C9B170B89B100C54ED9 /* RegexKitLite.m */,
 				31585C8F170B75BC00C54ED9 /* AttributedStringView.h */,
 				31585C8E170B75BC00C54ED9 /* AttributedStringView.m */,
 				31585C89170B759A00C54ED9 /* AttributedTextViewController.h */,
@@ -335,7 +330,6 @@
 				31585C8C170B759A00C54ED9 /* AttributedTextViewController.m in Sources */,
 				31585C90170B75BC00C54ED9 /* AttributedStringView.m in Sources */,
 				31585C99170B82D000C54ED9 /* TextAttributesFactory.m in Sources */,
-				31585C9C170B89B100C54ED9 /* RegexKitLite.m in Sources */,
 				31585CF2170BD61D00C54ED9 /* AttributedTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
