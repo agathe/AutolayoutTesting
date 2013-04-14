@@ -7,7 +7,7 @@
 //
 
 #import "AttributedTextViewController.h"
-#import "AttributedStringView.h"
+#import "TTTAttributedLabel.h"
 #import "TextAttributesFactory.h"
 #import "AttributedTableViewCell.h"
 
@@ -17,7 +17,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *inputText;
 @property (weak, nonatomic) IBOutlet UIView *bottomView;
 @property (strong, nonatomic) UITableView *tableView;
-@property (strong, nonatomic) AttributedStringView *textView1;
+@property (strong, nonatomic) TTTAttributedLabel *textView1;
 @property (strong, nonatomic) NSAttributedString *attributedString;
 
 - (IBAction)textChanged:(id)sender;
@@ -58,7 +58,8 @@
 - (void)addTextView1
 {
     CGRect frame = CGRectMake(0.0, 0.0, self.view.bounds.size.width, 100.0 );
-    AttributedStringView *view = [[AttributedStringView alloc] initWithFrame:frame];
+    TTTAttributedLabel *view = [[TTTAttributedLabel alloc] initWithFrame:frame];
+    view.lineBreakMode = NSLineBreakByWordWrapping;
     view.translatesAutoresizingMaskIntoConstraints = NO;
     view.backgroundColor = [UIColor blackColor];
     self.textView1 = view;
@@ -91,7 +92,8 @@
 - (void)changedTextInTextView1:(NSString*)title andArtist:(NSString*)artist
 {
     NSAttributedString *attString = [TextAttributesFactory attributedStringForStrings:@[title, artist]];
-    self.textView1.attributedString = attString;
+    [self.textView1 setText: attString];
+    self.textView1.numberOfLines = [self.textView1 intrinsicNumberOfLines];
     self.attributedString = attString;
     [self.tableView reloadData];
 }

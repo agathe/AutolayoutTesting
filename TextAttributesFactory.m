@@ -7,7 +7,7 @@
 //
 
 #import "TextAttributesFactory.h"
-#import "AttributedStringView.h"
+#import "TTTAttributedLabel.h"
 
 static NSDictionary *part1Attributes;
 static NSMutableDictionary *part1AttributesValues;
@@ -50,7 +50,7 @@ static NSMutableDictionary *part3AttributesValues;
 + (void)initializePartAttributes
 {
     NSMutableDictionary *dictionary = [NSMutableDictionary dictionaryWithObjectsAndKeys:
-                       @"Helvetica Bold", @"fontName",
+                       @"Helvetica-Bold", @"fontName",
                        [NSNumber numberWithFloat:24.0], @"fontSize",
                        [UIColor whiteColor], @"color",
                        [NSNumber numberWithInt:kCTLineBreakByWordWrapping], @"lineBreaking",
@@ -67,10 +67,19 @@ static NSMutableDictionary *part3AttributesValues;
     NSNumber *fontSize =[dictionary objectForKey:@"fontSize"];
     UIColor *color = [dictionary objectForKey:@"color"];
     NSNumber *lineBreaking = [dictionary objectForKey:@"lineBreaking"];
-    NSDictionary * atts = [AttributedStringView fontAttributesDictionaryForFontName:fontName
-                                                                                         size:fontSize.floatValue
-                                                                                        color:color
-                                                                                    linebreak:lineBreaking.intValue];
+
+    NSMutableParagraphStyle *mutParaStyle=[[NSMutableParagraphStyle alloc] init];
+//    [mutParaStyle setAlignment:alignment];
+    [mutParaStyle setLineBreakMode:NSLineBreakByWordWrapping];
+
+    NSMutableDictionary *atts = [NSMutableDictionary dictionaryWithObject:mutParaStyle
+                                                                   forKey:NSParagraphStyleAttributeName];
+    UIFont *font = [UIFont fontWithName:fontName size:fontSize.floatValue];
+    [atts setObject:font forKey:NSFontAttributeName];
+    [atts setObject:color forKey:NSForegroundColorAttributeName];
+
+     
+    
     return atts;
 }
 + (void)setPart1Attributes:(NSDictionary*)dictionary

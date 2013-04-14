@@ -37,11 +37,11 @@
 		31585C7A170A73FA00C54ED9 /* TableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31585C79170A73FA00C54ED9 /* TableView.m */; };
 		31585C8C170B759A00C54ED9 /* AttributedTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31585C8A170B759A00C54ED9 /* AttributedTextViewController.m */; };
 		31585C8D170B759A00C54ED9 /* AttributedTextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31585C8B170B759A00C54ED9 /* AttributedTextViewController.xib */; };
-		31585C90170B75BC00C54ED9 /* AttributedStringView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31585C8E170B75BC00C54ED9 /* AttributedStringView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		31585C96170B7CC300C54ED9 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31585C95170B7CC300C54ED9 /* CoreText.framework */; };
 		31585C99170B82D000C54ED9 /* TextAttributesFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 31585C98170B82D000C54ED9 /* TextAttributesFactory.m */; };
 		31585C9E170B8B2700C54ED9 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 31585C9D170B8B2700C54ED9 /* libicucore.dylib */; };
 		31585CF2170BD61D00C54ED9 /* AttributedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 31585CF1170BD61D00C54ED9 /* AttributedTableViewCell.m */; };
+		AB5F6D446AAACD8CF74BDAC8 /* TTTAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = AB5F64787A3DF80E065C396D /* TTTAttributedLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,14 +90,14 @@
 		31585C89170B759A00C54ED9 /* AttributedTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttributedTextViewController.h; sourceTree = "<group>"; };
 		31585C8A170B759A00C54ED9 /* AttributedTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttributedTextViewController.m; sourceTree = "<group>"; };
 		31585C8B170B759A00C54ED9 /* AttributedTextViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AttributedTextViewController.xib; sourceTree = "<group>"; };
-		31585C8E170B75BC00C54ED9 /* AttributedStringView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttributedStringView.m; sourceTree = "<group>"; };
-		31585C8F170B75BC00C54ED9 /* AttributedStringView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttributedStringView.h; sourceTree = "<group>"; };
 		31585C95170B7CC300C54ED9 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		31585C97170B82D000C54ED9 /* TextAttributesFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextAttributesFactory.h; sourceTree = "<group>"; };
 		31585C98170B82D000C54ED9 /* TextAttributesFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextAttributesFactory.m; sourceTree = "<group>"; };
 		31585C9D170B8B2700C54ED9 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		31585CF0170BD61D00C54ED9 /* AttributedTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttributedTableViewCell.h; sourceTree = "<group>"; };
 		31585CF1170BD61D00C54ED9 /* AttributedTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttributedTableViewCell.m; sourceTree = "<group>"; };
+		AB5F60EF1BC5A542CB0CABA6 /* TTTAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTAttributedLabel.h; sourceTree = "<group>"; };
+		AB5F64787A3DF80E065C396D /* TTTAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTAttributedLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,8 +226,6 @@
 		31585C88170B757E00C54ED9 /* text */ = {
 			isa = PBXGroup;
 			children = (
-				31585C8F170B75BC00C54ED9 /* AttributedStringView.h */,
-				31585C8E170B75BC00C54ED9 /* AttributedStringView.m */,
 				31585C89170B759A00C54ED9 /* AttributedTextViewController.h */,
 				31585C8A170B759A00C54ED9 /* AttributedTextViewController.m */,
 				31585C8B170B759A00C54ED9 /* AttributedTextViewController.xib */,
@@ -235,6 +233,8 @@
 				31585C98170B82D000C54ED9 /* TextAttributesFactory.m */,
 				31585CF0170BD61D00C54ED9 /* AttributedTableViewCell.h */,
 				31585CF1170BD61D00C54ED9 /* AttributedTableViewCell.m */,
+				AB5F60EF1BC5A542CB0CABA6 /* TTTAttributedLabel.h */,
+				AB5F64787A3DF80E065C396D /* TTTAttributedLabel.m */,
 			);
 			name = text;
 			sourceTree = "<group>";
@@ -328,9 +328,9 @@
 				31585C76170A70A900C54ED9 /* FixedHeightTableViewController.m in Sources */,
 				31585C7A170A73FA00C54ED9 /* TableView.m in Sources */,
 				31585C8C170B759A00C54ED9 /* AttributedTextViewController.m in Sources */,
-				31585C90170B75BC00C54ED9 /* AttributedStringView.m in Sources */,
 				31585C99170B82D000C54ED9 /* TextAttributesFactory.m in Sources */,
 				31585CF2170BD61D00C54ED9 /* AttributedTableViewCell.m in Sources */,
+				AB5F6D446AAACD8CF74BDAC8 /* TTTAttributedLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

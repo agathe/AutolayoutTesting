@@ -7,13 +7,13 @@
 //
 
 #import "AttributedTableViewCell.h"
-#import "AttributedStringView.h"
+#import "TTTAttributedLabel.h"
 
 
 
 @interface AttributedTableViewCell()
-@property (nonatomic, strong ) AttributedStringView *stringView;
-@property (nonatomic, strong ) AttributedStringView *stringView2;
+@property (nonatomic, strong ) TTTAttributedLabel *stringView;
+@property (nonatomic, strong ) TTTAttributedLabel *stringView2;
 @property (nonatomic, strong ) NSLayoutConstraint *stringView2SizeConstraint;
 
 @end
@@ -39,8 +39,9 @@
 }
 - (void)initialize
 {    
-    self.stringView = [[AttributedStringView alloc ] init];
+    self.stringView = [[TTTAttributedLabel alloc ] init];
     self.stringView.translatesAutoresizingMaskIntoConstraints = NO;
+    self.stringView.lineBreakMode = NSLineBreakByWordWrapping;
     [self addSubview:self.stringView];
     self.clipsToBounds = YES;
     self.stringView.backgroundColor = [UIColor blackColor];
@@ -48,8 +49,9 @@
     
 
 
-    self.stringView2 = [[AttributedStringView alloc ] init];
+    self.stringView2 = [[TTTAttributedLabel alloc ] init];
     self.stringView2.translatesAutoresizingMaskIntoConstraints = NO;
+    self.stringView2.lineBreakMode = NSLineBreakByWordWrapping;
     [self addSubview:self.stringView2];
     self.clipsToBounds = YES;
     self.stringView2.backgroundColor = [UIColor blueColor];
@@ -77,14 +79,16 @@
 
 - (void)setAttributedString:(NSAttributedString*)string
 {
-    self.stringView.attributedString = string;
-//    [self invalidateIntrinsicContentSize];
+    [self.stringView setText: string];
+    self.stringView.numberOfLines = [self.stringView intrinsicNumberOfLines];
 }
 
 - (void)setAttributedString2:(NSAttributedString*)string
 {
-    self.stringView2.attributedString = string;
-    CGFloat height = [AttributedStringView frameHeightForAttributedString:string width:self.stringView2.frame.size.width cache:self.stringView2.anyCache];
+    [self.stringView2 setText: string];
+    CGFloat height = self.stringView2.intrinsicContentSize.height;
+    self.stringView2.numberOfLines = [self.stringView2 intrinsicNumberOfLines];
+    
     self.stringView2SizeConstraint.constant = height;
     [self layoutIfNeeded];
 }
