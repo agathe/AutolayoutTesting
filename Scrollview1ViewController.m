@@ -85,9 +85,10 @@
     view2.translatesAutoresizingMaskIntoConstraints = NO;
     [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"|-8-[view2]-8-|" options:0 metrics:nil views:@{@"view2": view2}]];
     [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[view2]-8-|" options:0 metrics:nil views:@{@"view2": view2}]];
+    [view2 setContentHuggingPriority:UILayoutPriorityDefaultHigh forAxis:UILayoutConstraintAxisVertical];
     
     // space out the subviews, which makes the contentview grow vertically
-    [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[view1]-600-[view2]" options:0 metrics:nil views:@{@"view2": view2, @"view1": view1}]];
+    [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[view1]-400-[view2]" options:0 metrics:nil views:@{@"view2": view2, @"view1": view1}]];
 
     /**
      no ambiguous layout
